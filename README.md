@@ -1,1 +1,2 @@
-# core-code-from-scratch-readme-week-8
+# Diego Orellana - CoreCode Bootcamp 🚀
+## Week 8
