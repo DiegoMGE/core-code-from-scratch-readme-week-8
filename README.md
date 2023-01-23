@@ -1,9 +1,9 @@
 # Diego Orellana - CoreCode Bootcamp 🚀
 ## Week 8
 ## Monday Challenges
-- [Training JS #7: if..else and ternary operator!]()
-- [Training JS #8: Conditional statement--switch]()
-- [Basic calculator]()
+- [Training JS #7: if..else and ternary operator!](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#training-js-7-ifelse-and-ternary-operator)
+- [Training JS #8: Conditional statement--switch](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#training-js-8-conditional-statement--switch)
+- [Basic calculator](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#basic-calculator)
 
 ## Tuesday Challenges
 ## Wednesday Challenges
@@ -41,6 +41,10 @@ function howManydays(month) {
 ### Basic calculator
 ```javascript
 function calculate(num1, operation, num2) {
-  return (operation === '+') ? (num1 + num2) : (operation === '-') ? (num1 - num2) : (operation === '*') ? (num1 * num2) : (operation === '/' && num2 != 0) ? (num1 / num2) : null;
+  return (operation === '+') ? (num1 + num2)
+    : (operation === '-') ? (num1 - num2)
+    : (operation === '*') ? (num1 * num2)
+    : (operation === '/' && num2 != 0) ? (num1 / num2)
+    : null;
 }
 ```
