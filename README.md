@@ -6,9 +6,9 @@
 - [Basic calculator](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#basic-calculator)
 
 ## Tuesday Challenges
-- [Even or odd]()
-- [A wolf in sheep's clothing]()
-- [Decode the morse code]()
+- [Even or odd](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#even-or-odd)
+- [A wolf in sheep's clothing](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#a-wolf-in-sheeps-clothing)
+- [Decode the morse code](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#decode-the-morse-code)
 
 ## Wednesday Challenges
 
