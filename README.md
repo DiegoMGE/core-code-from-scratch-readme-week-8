@@ -6,7 +6,12 @@
 - [Basic calculator](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#basic-calculator)
 
 ## Tuesday Challenges
+- [Even or odd]()
+- [A wolf in sheep's clothing]()
+- [Decode the morse code]()
+
 ## Wednesday Challenges
+
 ## Thursday Challenges
 
 ### Training JS #7: if..else and ternary operator!
@@ -47,4 +52,42 @@ function calculate(num1, operation, num2) {
     : (operation === '/' && num2 != 0) ? (num1 / num2)
     : null;
 }
+```
+
+### Even or odd
+```javascript
+function evenOrOdd(number) {
+    return (number % 2 === 0) ? 'Even' : 'Odd';
+}
+```
+
+### A wolf in sheep's clothing
+```javascript
+function warnTheSheep(queue) {
+    let aWolf = queue.indexOf('wolf');
+    let sheepPosition = (queue.length - (aWolf + 1));
+
+    if (aWolf == (queue.length - 1)) {
+        return "Pls go away and stop eating my sheep"
+    }
+    return `Oi! Sheep number ${sheepPosition}! You are about to be eaten by a wolf!`
+}
+```
+
+### Decode the morse code
+```javascript
+decodeMorse = function(morseCode){
+    let newString = [];
+    let string = morseCode.trim().split('  ');
+    let wordFound = [];
+
+    for (let i = 0; i < string.length; i++) {
+        wordFound = string[i].split(' ');
+        for (let j = 0; j < wordFound.length; j++) {
+            wordFound[j] = MORSE_CODE[wordFound[j]];
+        }
+        newString.push(wordFound.join(''));
+    }
+    return newString.join(' ').trim();
+};
 ```
