@@ -11,6 +11,9 @@
 - [Decode the morse code](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#decode-the-morse-code)
 
 ## Wednesday Challenges
+- [Who likes it?]()
+- [Bit counting]()
+- [Your order, please]()
 
 ## Thursday Challenges
 
@@ -90,4 +93,46 @@ decodeMorse = function(morseCode){
     }
     return newString.join(' ').trim();
 };
+```
+
+### Who likes it?
+```javascript
+function likes(names) {
+  return (names.length == 0) ? 'no one likes this'
+    : (names.length == 1) ? `${names[0]} likes this`
+    : (names.length == 2) ? `${names[0]} and ${names[1]} like this`
+    : (names.length == 3) ? `${names[0]}, ${names[1]} and ${names[2]} like this`
+    : (names.length >= 4) ? `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+    : null;
+}
+```
+
+### Bit counting
+```javascript
+let numStr = n.toString(2);
+  let bitsCount = 0;
+
+  for(let i = 0; i < numStr.length; i++) {
+      if (numStr[i] === '1') {
+          bitsCount++;
+      }
+  }
+  return bitsCount;
+```
+
+### Your order, please
+```javascript
+function order(words) {
+    let split = words.split(' ');
+    let sorted = [];
+    
+    for (let i = 0; i <= split.length; i++) {
+        for(j = 0; j < split.length; j++) {
+            if (split[j].indexOf(i) >= 0) {
+                sorted.push(split[j]);
+            }
+        }
+    }
+    return sorted.join(' ');
+}
 ```
