@@ -11,11 +11,15 @@
 - [Decode the morse code](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#decode-the-morse-code)
 
 ## Wednesday Challenges
-- [Who likes it?]()
-- [Bit counting]()
-- [Your order, please]()
+- [Who likes it?](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#who-likes-it)
+- [Bit counting](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#bit-counting)
+- [Your order, please](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#your-order-please)
 
 ## Thursday Challenges
+- [Counting duplicates]()
+- [Encrypt this!]()
+- [Valid parentheses]()
+- [Convert string to camel case]()
 
 ### Training JS #7: if..else and ternary operator!
 ```javascript
@@ -110,7 +114,7 @@ function likes(names) {
 ### Bit counting
 ```javascript
 let numStr = n.toString(2);
-  let bitsCount = 0;
+let bitsCount = 0;
 
   for(let i = 0; i < numStr.length; i++) {
       if (numStr[i] === '1') {
@@ -127,12 +131,52 @@ function order(words) {
     let sorted = [];
     
     for (let i = 0; i <= split.length; i++) {
-        for(j = 0; j < split.length; j++) {
+        for (let j = 0; j < split.length; j++) {
             if (split[j].indexOf(i) >= 0) {
                 sorted.push(split[j]);
             }
         }
     }
     return sorted.join(' ');
+}
+```
+
+### Counting duplicates
+```javascript
+function duplicateCount(text) {
+    let txt = text.toLowerCase().split('');
+
+    return txt.filter((word, index, text) => {
+        return ((text.indexOf(word) !== index) && (text.lastIndexOf(word) === index))
+    }).length;
+}
+duplicateCount('indivisibilities');
+```
+
+### Encrypt this!
+```javascript
+function encrypt(word) {
+  if (word.length === 1) return word.charCodeAt(0);
+  const charBackup = word[1];
+  word = word.replace(word[0], word.charCodeAt(0));
+  word = word.replace(charBackup, word[word.length - 1]);
+  word = word.replace(/\w$/, charBackup);
+  return word;
+}
+
+var encryptThis = function (text) {
+  const textArray = text.split(' ');
+  let result = '';
+  textArray.forEach((w) => {
+    result = result + ' ' + encrypt(w);
+  });
+  return result.trim();
+};
+```
+
+### Valid parentheses
+```javascript
+function validParentheses(parens) {
+  return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';
 }
 ```
