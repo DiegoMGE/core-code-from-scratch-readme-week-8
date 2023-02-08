@@ -16,10 +16,10 @@
 - [Your order, please](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#your-order-please)
 
 ## Thursday Challenges
-- [Counting duplicates]()
-- [Encrypt this!]()
-- [Valid parentheses]()
-- [Convert string to camel case]()
+- [Counting duplicates](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#counting-duplicates)
+- [Encrypt this!](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#encrypt-this)
+- [Valid parentheses](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#valid-parentheses)
+- [Convert string to camel case](https://github.com/DiegoMGE/core-code-from-scratch-readme-week-8/blob/main/README.md#convert-string-to-camel-case)
 
 ### Training JS #7: if..else and ternary operator!
 ```javascript
