@@ -180,3 +180,20 @@ function validParentheses(parens) {
   return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';
 }
 ```
+
+### Convert string to camel case
+```javascript
+function toCamelCase(str) {
+    let result = '';
+    for (let i = 0; i < str.length; i++) {
+        if((str[i - 1] === '-' || str[i-1] === '_')) {
+            result += str[i].toUpperCase();
+        } else if (str[i] != '-' && str[i] != '_') {
+            console.log(str[i]);
+            result += str[i];
+            console.log(result);
+        }
+    }
+    return result;
+}
+```
